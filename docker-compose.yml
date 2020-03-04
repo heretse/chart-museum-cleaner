@@ -1,0 +1,12 @@
+version: '3'
+services:
+  chart-museum:
+    image: chartmuseum/chartmuseum:latest
+    volumes:
+    - ~/.helm/repository/local:/data/charts
+    ports:
+    - "8080:8080"
+    environment:
+    - STORAGE=local
+    - STORAGE_LOCAL_ROOTDIR=/data/charts
+    - PORT=8080
