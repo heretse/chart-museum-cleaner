@@ -10,3 +10,5 @@ services:
     - STORAGE=local
     - STORAGE_LOCAL_ROOTDIR=/data/charts
     - PORT=8080
+    - BASIC_AUTH_USER=admin
+    - BASIC_AUTH_PASS=123456

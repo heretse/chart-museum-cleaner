@@ -1,0 +1,1 @@
+docker build -t heretse/chartmuseum-cleaner:1.0.0 .
